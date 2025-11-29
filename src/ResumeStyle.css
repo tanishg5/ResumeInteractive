@@ -1,0 +1,296 @@
+.resume {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.resume-header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.download-btn {
+  background: #646cff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+  background: #535bf2;
+}
+
+.download-btn:active {
+  transform: scale(0.98);
+}
+
+.resume h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  color: #1a1a1a;
+}
+
+.resume .title {
+  color: #646cff;
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.resume .location {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.resume p {
+  color: #333;
+}
+
+.search-container {
+  margin: 25px 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+.clear-search {
+  padding: 12px 20px;
+  background: #f5f5f5;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.clear-search:hover {
+  background: #e0e0e0;
+  border-color: #999;
+}
+
+.no-results {
+  color: #999;
+  font-style: italic;
+  padding: 20px;
+  text-align: center;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+.contact {
+  margin: 20px 0;
+  padding: 15px;
+  background: #f5f5f5;
+  border-radius: 5px;
+}
+
+.contact p {
+  margin: 8px 0;
+}
+
+.contact a {
+  color: #646cff;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.resume h2 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  color: #333;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills span {
+  background: #646cff;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -22px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #646cff;
+  border: 3px solid white;
+  box-shadow: 0 0 0 2px #646cff;
+}
+
+.timeline-content {
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 15px;
+  border-left: 3px solid #646cff;
+  color: #333;
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  cursor: pointer;
+  user-select: none;
+}
+
+.timeline-header:hover {
+  opacity: 0.8;
+}
+
+.timeline-header h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.timeline-header .date {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.expand-icon {
+  font-size: 1.5rem;
+  color: #646cff;
+  font-weight: bold;
+  min-width: 25px;
+  text-align: center;
+}
+
+.timeline-details {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0;
+  animation: slideDown 0.3s ease;
+  color: #333;
+}
+
+.timeline-details p {
+  color: #333;
+  margin: 8px 0;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.timeline-details ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.timeline-details li {
+  margin: 5px 0;
+  color: #555;
+}
+
+.education {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #fafafa;
+  border-left: 3px solid #646cff;
+}
+
+.education h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .resume {
+    padding: 20px;
+  }
+  
+  .contact a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .resume-header-section {
+    flex-direction: column;
+  }
+
+  .download-btn {
+    width: 100%;
+  }
+
+  .timeline-header {
+    flex-direction: column;
+  }
+
+  .expand-icon {
+    align-self: flex-end;
+    margin-top: 5px;
+  }
+}
+
+@media print {
+  .download-btn {
+    display: none;
+  }
+  
+  .resume {
+    max-width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+}
